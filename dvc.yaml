@@ -4,3 +4,5 @@ stages:
     deps:
     - data/raw_data/
     - src/data/data_split.py
+    outs:
+    - data/processed_data/X_train.csv
