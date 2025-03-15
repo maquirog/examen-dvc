@@ -73,3 +73,23 @@ stages:
       hash: md5
       md5: ca5e32ec33dfc12cdeb4d47f45d8afdc
       size: 94
+  training:
+    cmd: python src/models/training.py
+    deps:
+    - path: data/processed_data/X_train_scaled.csv
+      hash: md5
+      md5: de6634b3670e0421231dd8d8914e7977
+      size: 194337
+    - path: data/processed_data/y_train.csv
+      hash: md5
+      md5: 4f1097f0b9053f0a94904c047541877f
+      size: 22710
+    - path: src/models/training.py
+      hash: md5
+      md5: f7da4a99b53236c9b6636b9576e6b29a
+      size: 608
+    outs:
+    - path: models/gbr_model.pkl
+      hash: md5
+      md5: 0ac458f78ebd6f514e3b27a1994cdc98
+      size: 130515
