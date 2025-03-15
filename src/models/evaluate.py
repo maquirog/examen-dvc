@@ -19,3 +19,6 @@ with open("metrics/scores.json", "w", encoding="utf8") as file:
     json.dump(metrics, file)
 
 file.close()
+
+y_pred_csv = pd.DataFrame(y_pred, columns=y_test.columns)
+y_pred_csv.to_csv('data/processed_data/predictions.csv', index=False)
