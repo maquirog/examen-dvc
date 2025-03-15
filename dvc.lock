@@ -10,11 +10,22 @@ stages:
       nfiles: 3
     - path: src/data/data_split.py
       hash: md5
-      md5: 239f2f3f6d66a82c2e51bc4c17cd8832
-      size: 908
+      md5: be2be48da5a5a205a4e55dbc2469e159
+      size: 976
     outs:
-    - path: data/processed_data/
+    - path: data/processed_data/X_test.csv
       hash: md5
-      md5: ea5e20a3ece6ba76477bdc8f954ad90b.dir
-      size: 294499
-      nfiles: 4
+      md5: d3be1be617366bc81a9254f075039b51
+      size: 78770
+    - path: data/processed_data/X_train.csv
+      hash: md5
+      md5: 38e9f56c92d20ee33257e3918c901e7e
+      size: 183322
+    - path: data/processed_data/y_test.csv
+      hash: md5
+      md5: e064ea83fe860a49b9e9cfab1e8ec5a7
+      size: 9697
+    - path: data/processed_data/y_train.csv
+      hash: md5
+      md5: 4f1097f0b9053f0a94904c047541877f
+      size: 22710

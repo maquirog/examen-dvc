@@ -11,7 +11,9 @@ def split_data(df):
 
 def to_csv_data(X_train, X_test, y_train, y_test):
 
-    os.makedirs("data/processed_data")
+    directory = "data/processed_data"
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
     X_train.to_csv('data/processed_data/X_train.csv', index=False)
     X_test.to_csv('data/processed_data/X_test.csv', index=False)
