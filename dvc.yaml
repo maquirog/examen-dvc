@@ -1,0 +1,6 @@
+stages:
+  split:
+    cmd: python src/data/data_split.py
+    deps:
+    - data/raw_data/
+    - src/data/data_split.py
