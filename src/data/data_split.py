@@ -1,6 +1,7 @@
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
+import os
 
 def split_data(df):
     target = df['silica_concentrate']
@@ -9,6 +10,11 @@ def split_data(df):
     return X_train, X_test, y_train, y_test
 
 def to_csv_data(X_train, X_test, y_train, y_test):
+
+    directory = "data/processed_data"
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
     X_train.to_csv('data/processed_data/X_train.csv', index=False)
     X_test.to_csv('data/processed_data/X_test.csv', index=False)
     y_train.to_csv('data/processed_data/y_train.csv', index=False)

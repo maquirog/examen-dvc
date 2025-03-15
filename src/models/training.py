@@ -1,4 +1,3 @@
-import joblib
 from sklearn.ensemble import GradientBoostingRegressor
 import pickle
 import pandas as pd
@@ -12,7 +11,6 @@ with open("models/best_params.pkl", 'rb') as file:
 print("best_params:", best_params)
 
 gbr = GradientBoostingRegressor().fit(X_train_scaled, y_train)
-joblib.dump(gbr, "gbr_model.p")
 
 with open("models/gbr_model.pkl", 'wb') as file:
     # Serialize and write the variable to the file
