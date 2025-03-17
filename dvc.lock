@@ -3,11 +3,10 @@ stages:
   split:
     cmd: python src/data/data_split.py
     deps:
-    - path: data/raw_data/
+    - path: data/raw_data/raw.csv
       hash: md5
-      md5: c5b0254fb65c494b72ccba32bfb8a553.dir
-      size: 333782
-      nfiles: 2
+      md5: 617b56af2992376d5c3e91ad80823898
+      size: 333757
     - path: src/data/data_split.py
       hash: md5
       md5: be2be48da5a5a205a4e55dbc2469e159
