@@ -1,20 +1,13 @@
 # Examen DVC et Dagshub
-Dans ce dépôt vous trouverez l'architecture proposé pour mettre en place la solution de l'examen. 
+Mario Arturo QUIROGA AGUILAR
+marioquiroga2912@hotmail.com
 
-```bash       
-├── examen_dvc          
-│   ├── data       
-│   │   ├── processed      
-│   │   └── raw       
-│   ├── metrics       
-│   ├── models      
-│   │   ├── data      
-│   │   └── models        
-│   ├── src       
-│   └── README.md.py       
-```
-N'hésitez pas à rajouter les dossiers ou les fichiers qui vous semblent pertinents.
+https://dagshub.com/maquirog/examen-dvc.s3
 
-Vous devez dans un premier temps *Fork* le repo et puis le cloner pour travailler dessus. Le rendu de cet examen sera le lien vers votre dépôt sur DagsHub. Faites attention à bien mettre https://dagshub.com/licence.pedago en tant que colaborateur avec des droits de lecture seulement pour que ce soit corrigé.
+Instructions :
 
-Vous pouvez télécharger les données à travers le lien suivant : https://datascientest-mlops.s3.eu-west-1.amazonaws.com/mlops_dvc_fr/raw.csv.
+1.- Cloner le repo : https://github.com/maquirog/examen-dvc.git
+
+2.- Executer setup.sh
+
+C'est tout
